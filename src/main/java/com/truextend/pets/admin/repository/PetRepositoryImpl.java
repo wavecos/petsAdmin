@@ -1,11 +1,14 @@
 package com.truextend.pets.admin.repository;
 
 import com.truextend.pets.admin.domain.Pet;
+import com.truextend.pets.admin.enums.AnimalType;
+import com.truextend.pets.admin.enums.Gender;
 import com.truextend.pets.admin.store.PetStore;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Created by onix on 6/9/16.
@@ -19,6 +22,37 @@ public class PetRepositoryImpl implements PetRepository {
   @Override
   public List<Pet> findAll() {
     return petStore.getInstance().getData();
+  }
+
+  @Override
+  public List<Pet> findAllByName(String name) {
+
+    // JAVA 8 !! I use this instead Apache Commons Collections
+    List<Pet> result = petStore.getInstance().getData().stream()
+            .filter(item -> item.getName().equals(name))
+            .collect(Collectors.toList());
+
+    return result;
+  }
+
+  @Override
+  public List<Pet> findAllByType(AnimalType type) {
+    // JAVA 8 !! I use this instead Apache Commons Collections
+    List<Pet> result = petStore.getInstance().getData().stream()
+            .filter(item -> item.getType().equals(type))
+            .collect(Collectors.toList());
+
+    return result;
+  }
+
+  @Override
+  public List<Pet> findAllByTypeAndGender(AnimalType type, Gender gender) {
+    // JAVA 8 !! I use this instead Apache Commons Collections
+    List<Pet> result = petStore.getInstance().getData().stream()
+            .filter(item -> item.getType().equals(type) && item.getGender().equals(gender))
+            .collect(Collectors.toList());
+
+    return result;
   }
 
   @Override

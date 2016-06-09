@@ -70,8 +70,6 @@ public class CSVPetParser {
       }
     }
 
-    log.info("Pet List :: " + pets);
-
     return pets;
   }
 

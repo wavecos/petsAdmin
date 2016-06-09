@@ -1,9 +1,9 @@
 # PET ADMIN - Demo App
 
-This is a command line app written in Java using Spring Boot, the business logic is to handle pets that are loaded via CSV file.
+This is a command line app written in Java using Maven & Spring Boot. The main business logic is to handle pets that are loaded via CSV file for search and insert pets.
 
 ## Requisites
-* Java 8 (for the search used Lambdas instead Apache commons collections)
+* Java JDK 8 (for the search I used Lambdas instead Apache Commons Collections)
 * Maven 3
 
 ## How to run ?

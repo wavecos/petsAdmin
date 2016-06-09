@@ -1,4 +1,4 @@
-package com.truextend.pets.admin.domain.enums;
+package com.truextend.pets.admin.enums;
 
 /**
  * Created by onix on 6/9/16.

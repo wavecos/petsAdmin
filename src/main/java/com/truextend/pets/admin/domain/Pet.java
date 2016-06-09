@@ -1,7 +1,8 @@
 package com.truextend.pets.admin.domain;
 
-import com.truextend.pets.admin.domain.enums.AnimalType;
-import com.truextend.pets.admin.domain.enums.Gender;
+
+import com.truextend.pets.admin.enums.AnimalType;
+import com.truextend.pets.admin.enums.Gender;
 
 import java.util.Date;
 

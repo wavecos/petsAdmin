@@ -1,8 +1,8 @@
 package com.truextend.pets.admin.util;
 
 import com.truextend.pets.admin.domain.Pet;
-import com.truextend.pets.admin.domain.enums.AnimalType;
-import com.truextend.pets.admin.domain.enums.Gender;
+import com.truextend.pets.admin.enums.AnimalType;
+import com.truextend.pets.admin.enums.Gender;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 

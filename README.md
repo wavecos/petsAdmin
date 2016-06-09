@@ -9,4 +9,9 @@ This is a command line app written in Java using Spring Boot, the business logic
 ## How to run ?
 
 1) from the command line execute:
-2)  
+
+```
+mvn package
+```
+
+To install all dependencies (the first time maybe take some time)

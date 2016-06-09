@@ -29,7 +29,9 @@ To install all dependencies (the first time maybe take some time)
 java -jar target/petsAdmin-0.0.1-SNAPSHOT.jar "pet-data.csv" "name=Jerry"
 ```
 
-to get all pets with name "Jerry". The output is printed in console (without logger format) also with some searh results information.
+To get all pets with name "Jerry". The output is printed in console (without logger format) also with some searh results information.
+
+Also is provided a sample CSV file with 1000 pets to test the app.
 
 Other examples:
 

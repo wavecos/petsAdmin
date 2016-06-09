@@ -8,6 +8,13 @@ This is a command line app written in Java using Spring Boot, the business logic
 
 ## How to run ?
 
+0) You can clone the git repository
+
+```
+git clone https://github.com/wavecos/petsAdmin.git
+cd petsAdmin
+```
+
 1) From the command line execute to generate the Jar file.
 
 ```
@@ -22,7 +29,7 @@ To install all dependencies (the first time maybe take some time)
 java -jar target/petsAdmin-0.0.1-SNAPSHOT.jar "pet-data.csv" "name=Jerry"
 ```
 
-to get all pets with name "Jerry".
+to get all pets with name "Jerry". The output is printed in console (without logger format) also with some searh results information.
 
 Other examples:
 
@@ -35,3 +42,6 @@ java -jar target/petsAdmin-0.0.1-SNAPSHOT.jar "pet-data.csv" "type=CAT" "gender=
 ```
 
 ## Note
+
+For "type" argument use "DOG" or "CAT" (uppercase).
+For "gender" argument use "F" or "M" (uppercase).
